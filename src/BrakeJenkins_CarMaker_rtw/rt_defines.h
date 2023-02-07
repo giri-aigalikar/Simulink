@@ -7,9 +7,9 @@
  *
  * Code generation for model "BrakeJenkins".
  *
- * Model version              : 1.1
+ * Model version              : 1.2
  * Simulink Coder version : 9.4 (R2020b) 29-Jul-2020
- * C source code generated on : Tue Feb  7 13:19:35 2023
+ * C source code generated on : Tue Feb  7 14:08:20 2023
  *
  * Target selection: CarMaker.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping

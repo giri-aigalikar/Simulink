@@ -17,6 +17,8 @@ include C:/IPG/carmaker/win64-10.2.2/include/MakeDefs.win64
 
 
 # @@PLUGIN-BEGIN-MATLAB@@ - Automatically generated code - don't edit!
+MATSUPP_MATVER =	R2020b
+MAT_HOME =		C:/PROGRA~1/MATLAB/R2020b
 # @@PLUGIN-END@@
 
 # Matlab version and Matlab installation directory.
@@ -60,6 +62,7 @@ OBJS =			User.cm4sl.o CM_Main.cm4sl.o CM_Vehicle.cm4sl.o
 #OBJS += libSimuModel_$(ARCH).a
 
 # @@PLUGIN-BEGIN-LIBS@@ - Automatically generated code - don't edit!
+OBJS += libBrakeJenkins_$(ARCH).a
 # @@PLUGIN-END@@
 
 ### END (Linking with RTW-built Simulink models)

@@ -19,6 +19,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+#if defined(_DSRT) || defined(_DSRTLX)
+#  include <DsApplicationInterface.h>
+#endif
 
 #include <infoc.h>
 #include <CarMaker.h>
@@ -28,11 +31,13 @@
 extern const char *SetConnectedIO (const char *io);
 
 static const char *CompileLibs[] = {
-    /* /net/dagobert/local/work.fh/cm100d/src_lib/Portings/win64/lib/libcar4sl.a */
-    /* /net/dagobert/local/work.fh/cm100d/src_lib/Portings/win64/lib/libcarmaker4sl.a */
-    /* /net/dagobert/local/work.fh/cm100d/lib/driver/win64/lib/libipgdriver.a */
-    /* /net/dagobert/local/work.fh/cm100d/lib/road/win64/lib/libipgroad.a */
-    /* /net/dagobert/local/work.fh/cm100d/lib/tire/win64/lib/libipgtire.a */
+    /* libBrakeJenkins_win64.a */
+    /* C:/IPG/carmaker/win64-10.2.2/lib/libcar4sl.a */
+    /* C:/IPG/carmaker/win64-10.2.2/lib/libcarmaker4sl.a */
+    /* C:/IPG/carmaker/win64-10.2.2/lib/libipgdriver.a */
+    /* C:/IPG/carmaker/win64-10.2.2/lib/libipgroad.a */
+    /* C:/IPG/carmaker/win64-10.2.2/lib/libipgtire.a */
+    "libBrakeJenkins_win64.a	BrakeJenkins win64 1.0 2023-02-07",
     "libcar4sl.a	CarMaker-Car win64 10.2.2 2022-04-26",
     "libcarmaker4sl.a	CarMaker win64 10.2.2 2022-04-26",
     "libipgdriver.a	IPGDriver win64 10.2 2021-10-21",
@@ -44,25 +49,25 @@ static const char *CompileLibs[] = {
 
 static const char *CompileFlags[] = {
     "-m64 -O3 -DNDEBUG -DWIN32 -DWIN64 -DCM_NUMVER=100202",
-    "-DMYMODELS -Wall -Wimplicit -Wmissing-prototypes",
-    "-D__USE_MINGW_ANSI_STDIO -Wlogical-op -DCM4SL",
-    "-U__STRICT_ANSI__ -Wall -malign-double",
-    "-fomit-frame-pointer",
+    "-IC:/IPG/carmaker/win64-10.2.2/include -Wall",
+    "-Wimplicit -Wmissing-prototypes",
+    "-D__USE_MINGW_ANSI_STDIO -DCM4SL -U__STRICT_ANSI__",
+    "-Wall -malign-double -fomit-frame-pointer",
     NULL
 };
 
 
 tAppStartInfo   AppStartInfo = {
-    "Car_Generic default",          /* App_Version         */
-    "1624",          /* App_BuildVersion    */
-    "fh",     /* App_CompileUser     */
-    "hpc.ipg",         /* App_CompileSystem   */
-    "2022-04-26 11:39:49",  /* App_CompileTime */
+    "Car_Generic ?.?",          /* App_Version         */
+    "1",          /* App_BuildVersion    */
+    "giri.aigalikar",     /* App_CompileUser     */
+    "giri-pc",         /* App_CompileSystem   */
+    "2023-02-07 14:06:59",  /* App_CompileTime */
 
     CompileFlags,                /* App_CompileFlags  */
     CompileLibs,                 /* App_Libs          */
 
-    "",          /* SetVersion        */
+    "10.2.2",          /* SetVersion        */
 
     NULL,           /* TestRunName       */
     NULL,           /* TestRunFName      */
@@ -182,4 +187,11 @@ App_ExportConfig (void)
 }
 
 
+#if defined(_DS1006)
+void
+IPGRT_Board_Init (void)
+{
+    init();
+}
+#endif
 

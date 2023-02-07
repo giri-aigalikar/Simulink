@@ -3,6 +3,8 @@
 include $(CM_DIR)/include/MakeDefs.win64
 
 # @@PLUGIN-BEGIN-MATLAB@@ - Automatically generated code - don't edit!
+MATSUPP_MATVER =	R2020b
+MAT_HOME =		C:/PROGRA~1/MATLAB/R2020b
 # @@PLUGIN-END@@
 
 # Matlab version and Matlab installation directory.
@@ -47,6 +49,7 @@ OBJ_APP = ../app_tmp.cm4sl.o
 #OBJS += libSimuModel_$(ARCH).a
 
 # @@PLUGIN-BEGIN-ECLIBS@@ - Automatically generated code - don't edit!
+OBJS += ../libBrakeJenkins_$(ARCH).a
 # @@PLUGIN-END@@
 
 ### END (Linking with RTW-built Simulink models)

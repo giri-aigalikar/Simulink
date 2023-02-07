@@ -93,6 +93,7 @@
 #include "User.h"
 
 /* @@PLUGIN-BEGIN-INCLUDE@@ - Automatically generated code - don't edit! */
+#include "BrakeJenkins_CarMaker_rtw/BrakeJenkins_wrap.h"
 /* @@PLUGIN-END@@ */
 
 
@@ -215,6 +216,7 @@ User_Register (void)
 {
 
     /* @@PLUGIN-BEGIN-REGISTER@@ - Automatically generated code - don't edit! */
+    BrakeJenkins_Register();
     /* @@PLUGIN-END@@ */
 
     return 0;
