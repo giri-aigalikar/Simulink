@@ -1,8 +1,9 @@
 setenv('MSYS_ROOT' , 'MSYS-2020')
-addpath(genpath('../src_cm4sl'));
+addpath(genpath('../src'));
 open_system('BrakeJenkins');
-set_param('BrakeJenkins','LaunchReport','off');
 cd ("../src")
+set_param('BrakeJenkins','LaunchReport','off');
+
 try
 	rtwbuild('BrakeJenkins');
     fprintf("Build Sucess!1")
