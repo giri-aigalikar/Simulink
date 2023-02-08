@@ -1,0 +1,4 @@
+#INFOFILE1.1 - Do not remove this line!
+FileIdent = CarMaker-Plugins 1
+Brake.BrakeJenkins = 1
+Brake.BrakeJenkins.Info = BrakeJenkins
