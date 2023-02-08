@@ -1,5 +1,5 @@
 setenv('MSYS_ROOT' , 'MSYS-2020')
-addpath(genpath('C:/CarMaker_Projects/CM10/JenkinsTest/src_cm4sl'));
+addpath(genpath('JenkinsTest/src'));
 load_system('BrakeJenkins');
 set_param('BrakeJenkins','LaunchReport','off');
 try
