@@ -7,9 +7,9 @@
  *
  * Code generation for model "BrakeJenkins".
  *
- * Model version              : 1.11
+ * Model version              : 1.14
  * Simulink Coder version : 9.4 (R2020b) 29-Jul-2020
- * C source code generated on : Wed Feb  8 15:42:51 2023
+ * C source code generated on : Wed Feb 15 13:38:18 2023
  *
  * Target selection: CarMaker.tlc
  * Note: GRT includes extra infrastructure and instrumentation for prototyping
@@ -89,7 +89,7 @@ typedef struct {
 
 /* Parameters (default storage) */
 struct P_BrakeJenkins_T_ {
-  real_T Gain_Gain;                    /* Expression: 25
+  real_T Gain_Gain;                    /* Expression: 100
                                         * Referenced by: '<Root>/Gain'
                                         */
   real_T Trq_DriveSrc_trgd0_Value;     /* Expression: 0

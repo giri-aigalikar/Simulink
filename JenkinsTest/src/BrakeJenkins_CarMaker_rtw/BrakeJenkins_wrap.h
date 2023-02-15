@@ -4,6 +4,7 @@
 /*  (c) IPG Automotive GmbH    www.ipg-automotive.com   Fon: +49.721.98520-0  */
 /*  Bannwaldallee 60      D-76185 Karlsruhe   Germany   Fax: +49.721.98520-99 */
 /******************************************************************************/
+
 #ifndef __BRAKEJENKINS_WRAP_H__
 #define __BRAKEJENKINS_WRAP_H__
 #ifndef IS_CAR

@@ -124,8 +124,8 @@ INC_CFLAGS	+= -I. -I$(RELATIVE_PATH_TO_ANCHOR) \
 		   -I$(CM_MATINCPATH)/rtw/c/src/ext_mode/common \
 		   -I$(CM_MATINCPATH)/rtw/c/libsrc
 
-INC_CFLAGS	+= -I$(subst \,/,"C:\CarMaker_Projects\CM10\JenkinsTest\src")
-INC_CFLAGS	+= -I$(subst \,/,"C:\CarMaker_Projects\CM10\JenkinsTest\src\BrakeJenkins_CarMaker_rtw")
+INC_CFLAGS	+= -I$(subst \,/,"C:\Users\giri.aigalikar\Desktop\Git_Clone\test-repo1\JenkinsTest\src")
+INC_CFLAGS	+= -I$(subst \,/,"C:\Users\giri.aigalikar\Desktop\Git_Clone\test-repo1\JenkinsTest\src\BrakeJenkins_CarMaker_rtw")
 INC_CFLAGS	+= -I$(subst \,/,"$(MATLAB_ROOT)\extern\include")
 INC_CFLAGS	+= -I$(subst \,/,"$(MATLAB_ROOT)\simulink\include")
 INC_CFLAGS	+= -I$(subst \,/,"$(MATLAB_ROOT)\rtw\c\src")
