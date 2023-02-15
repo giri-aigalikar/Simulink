@@ -1,5 +1,5 @@
 setenv('MSYS_ROOT' , 'MSYS-2020')
-addpath(genpath('JenkinsTest/src'));
+addpath(genpath('C:/Users/giri.aigalikar/Desktop/Git_Clone/test-repo1/JenkinsTest/src'));
 load_system('BrakeJenkins');
 set_param('BrakeJenkins','LaunchReport','off');
 try
