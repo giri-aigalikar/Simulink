@@ -1,3 +1,3 @@
 # test-repo1
 
-Biuild Matlab Executable
+Build Matlab Executable
